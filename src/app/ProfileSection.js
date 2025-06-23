@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaEnvelope, FaPhone, FaCheck } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaPhone, FaCheck } from "react-icons/fa";
 
 export default function ProfileSection() {
   return (
@@ -8,13 +8,13 @@ export default function ProfileSection() {
         <div className="flex flex-col md:flex-row w-full max-w-6xl gap-8 md:gap-12">
           {/* صورة البروفايل */}
           <div className="flex-1 flex justify-center items-center min-w-0">
-            <div className="p-1 rounded-lg bg-gradient-to-tr from-blue-400 to-purple-400">
+            <div className="p-1 rounded-xl bg-gradient-to-tr from-blue-400 to-purple-400">
               <Image
                 src="/profile.jpg"
                 alt="profile"
-                width={400}
-                height={600}
-                className="rounded-lg  h-auto object-cover"
+                width={240}
+                height={300}
+                className="rounded-xl grayscale w-full max-w-[240px] h-auto object-cover"
               />
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function ProfileSection() {
               <h3 className="font-bold text-[#232a4d] mb-1 text-lg md:text-xl">EDUCATION</h3>
               <ul className="text-base md:text-lg text-gray-700">
                 <span className="font-bold">
-                  Bachelor's degree in Turkish Language
+                  Bachelor&apos;s degree in Turkish Language
                 </span>
                 <li>
                   Faculty of Alsun, Ain Shams University, Turkish Department
@@ -42,42 +42,8 @@ export default function ProfileSection() {
             <div>
               <h3 className="font-bold text-[#232a4d] mb-1 text-lg md:text-xl">Communication</h3>
               <ul className="text-base md:text-lg text-gray-700 flex flex-col gap-1">
-                <li className="flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    fill="url(#grad1)"
-                    viewBox="0 0 24 24"
-                  >
-                    <defs>
-                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                      </linearGradient>
-                    </defs>
-                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.61 21 3 13.39 3 4.5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
-                  </svg>
-                  +2 01016023837
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    fill="url(#grad2)"
-                    viewBox="0 0 24 24"
-                  >
-                    <defs>
-                      <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                      </linearGradient>
-                    </defs>
-                    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.2l7.38 6.44a1 1 0 001.24 0L20 8.2V18H4z" />
-                  </svg>
-                  alaa.mohamed3698@gmail.com
-                </li>
+                <li className="flex items-center gap-2"><FaPhone className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> +2 01016023837</li>
+                <li className="flex items-center gap-2"><FaEnvelope className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> alaa.mohamed3698@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -110,118 +76,13 @@ export default function ProfileSection() {
           <div className="min-w-0 break-words">
             <h3 className="font-bold text-[#232a4d] mb-2 text-lg md:text-xl">Skill</h3>
             <ul className="text-base md:text-lg text-gray-700 space-y-1">
-              <li className="flex items-center gap-2"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="url(#grad3)"
-                viewBox="0 0 24 24"
-              >
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.193 9.2-4.243-4.242a1 1 0 00-1.414 1.414l4.95 4.95a1 1 0 001.414 0l9.9-9.904z" />
-              </svg>
-                User Research</li>
-              <li className="flex items-center gap-2"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="url(#grad3)"
-                viewBox="0 0 24 24"
-              >
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.193 9.2-4.243-4.242a1 1 0 00-1.414 1.414l4.95 4.95a1 1 0 001.414 0l9.9-9.904z" />
-              </svg>
-                User Flow</li>
-              <li className="flex items-center gap-2"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="url(#grad3)"
-                viewBox="0 0 24 24"
-              >
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.193 9.2-4.243-4.242a1 1 0 00-1.414 1.414l4.95 4.95a1 1 0 001.414 0l9.9-9.904z" />
-              </svg>
-                Wireframing</li>
-              <li className="flex items-center gap-2"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="url(#grad3)"
-                viewBox="0 0 24 24"
-              >
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.193 9.2-4.243-4.242a1 1 0 00-1.414 1.414l4.95 4.95a1 1 0 001.414 0l9.9-9.904z" />
-              </svg>
-                Prototyping</li>
-              <li className="flex items-center gap-2"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="url(#grad3)"
-                viewBox="0 0 24 24"
-              >
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.193 9.2-4.243-4.242a1 1 0 00-1.414 1.414l4.95 4.95a1 1 0 001.414 0l9.9-9.904z" />
-              </svg>
-                High-Fidelity Design</li>
-              <li className="flex items-center gap-2"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="url(#grad3)"
-                viewBox="0 0 24 24"
-              >
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.193 9.2-4.243-4.242a1 1 0 00-1.414 1.414l4.95 4.95a1 1 0 001.414 0l9.9-9.904z" />
-              </svg>
-                Branding & Visual Storytelling</li>
-              <li className="flex items-center gap-2"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="url(#grad3)"
-                viewBox="0 0 24 24"
-              >
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#5ec6e7', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#b97adf', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.193 9.2-4.243-4.242a1 1 0 00-1.414 1.414l4.95 4.95a1 1 0 001.414 0l9.9-9.904z" />
-              </svg>
-                Desain Sosial Media & Iklan</li>
+              <li className="flex items-center gap-2"><FaCheck className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> User Research</li>
+              <li className="flex items-center gap-2"><FaCheck className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> User Flow</li>
+              <li className="flex items-center gap-2"><FaCheck className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> Wireframing</li>
+              <li className="flex items-center gap-2"><FaCheck className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> Prototyping</li>
+              <li className="flex items-center gap-2"><FaCheck className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> High-Fidelity Design</li>
+              <li className="flex items-center gap-2"><FaCheck className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> Branding & Visual Storytelling</li>
+              <li className="flex items-center gap-2"><FaCheck className="bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] bg-clip-text text-transparent" /> Desain Sosial Media & Iklan</li>
             </ul>
           </div>
           {/* الأدوات */}
