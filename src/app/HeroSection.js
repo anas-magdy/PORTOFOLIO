@@ -1,6 +1,15 @@
+'use client';
 import React from 'react';
 
 export default function HeroSection() {
+  // Scroll handler
+  const handleScroll = () => {
+    const nextSection = document.getElementById('profile-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative flex items-center justify-center h-screen w-full bg-white overflow-hidden px-4">
       {/* Grid background */}
@@ -41,6 +50,14 @@ export default function HeroSection() {
         >
           Alaa M.Abd-Elsalam
         </span>
+        {/* زر النزول */}
+        <button
+          onClick={handleScroll}
+          className="mt-16 px-6 py-3 bg-gradient-to-r from-[#5ec6e7] to-[#b97adf] text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-200 font-bold text-lg flex items-center gap-2"
+          style={{ direction: 'rtl' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" /></svg>
+        </button>
       </div>
     </section>
   );
