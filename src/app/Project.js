@@ -25,7 +25,7 @@ export default function Project() {
                 </div>
 
                 <div className="flex flex-wrap ">
-                    <div className="w-full md:w-1/2 lg:w-1/3 px-6 mt-30 mb-30 flex justify-center">
+                    <div className="w-full md:w-1/2 lg:w-1/3 px-6 mt-30  flex justify-center">
                         <Image
                             src="/Frame 34276.jpg"
                             alt="Fitur UKOM AI"
@@ -34,7 +34,7 @@ export default function Project() {
                             className="w-full max-h-[623px] max-w-[300px] rounded-md"
                         />
                     </div>
-                    <div className="w-full md:w-1/2 lg:w-1/3 px-18 mt-60 flex justify-center mt-10">
+                    <div className="w-full md:w-1/2 lg:w-1/3  mt-30 md:mt-60 flex justify-center mt-10">
                         <Image
                             src="/Frame 34274.png"
                             alt="Fitur UKOM AI Dark"
@@ -43,7 +43,7 @@ export default function Project() {
                             className="w-full  max-h-[623px] max-w-[300px] rounded-md"
                         />
                     </div>
-                    <div className="w-full md:w-1/2 lg:w-1/3 px-18 mt-30 flex justify-center mt-10">
+                    <div className="w-full md:w-1/2 lg:w-1/3  mt-30 flex justify-center mt-10">
                         <Image
                             src="/Frame 34280.jpg"
                             alt="Fitur UKOM AI Dark"
@@ -76,7 +76,7 @@ export default function Project() {
                 </div>
 
                 <div className="flex flex-wrap ">
-                    <div className="w-full md:w-1/2 lg:w-1/3 px-6 mt-30 mb-30 flex justify-center">
+                    <div className="w-full md:w-1/2 lg:w-1/3 px-6 mt-30 flex justify-center">
                         <Image
                             src="/proj2_1.png"
                             alt="Fitur UKOM AI"
@@ -85,7 +85,7 @@ export default function Project() {
                             className="w-full max-h-[623px] max-w-[300px] rounded-md"
                         />
                     </div>
-                    <div className="w-full md:w-1/2 lg:w-1/3 px-18 mt-60 flex justify-center mt-10">
+                    <div className="w-full md:w-1/2 lg:w-1/3  mt-30 md:mt-60  flex justify-center mt-10">
                         <Image
                             src="/proj2_2.png"
                             alt="Fitur UKOM AI Dark"
@@ -94,7 +94,7 @@ export default function Project() {
                             className="w-full  max-h-[623px] max-w-[300px] rounded-md"
                         />
                     </div>
-                    <div className="w-full md:w-1/2 lg:w-1/3 px-18 mt-30 flex justify-center mt-10">
+                    <div className="w-full md:w-1/2 lg:w-1/3  mt-30 flex justify-center mt-10">
                         <Image
                             src="/proj2_3.png"
                             alt="Fitur UKOM AI Dark"
