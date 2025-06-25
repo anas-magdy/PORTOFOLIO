@@ -28,8 +28,30 @@ export default function HeroSection() {
   };
 
   return (
+
     <section className="relative flex items-center justify-center h-screen w-full bg-white overflow-hidden px-4">
       {/* Grid background */}
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5 }}
+        className="absolute top-4 xs:bottom-16 right-4 z-10 gap-1 text-[#232a4d]/60 font-bold text-3xl flex"
+      >
+        <div className='border-t-2 w-[100vw] mt-6 ' style={{
+          borderImage: "linear-gradient(to right,#7b6eea , #2b7fff) 1"
+        }}></div>
+        <div className="text-3xl bg-white leading-none translate-x-1/2 mb-1">
+          <span className='text-4xl font-bold bg-gradient-to-tr from-blue-500 to-purple-500 bg-clip-text text-transparent leading-none translate-x-1/2'>+</span>
+        </div>
+      </motion.div>
+
+      {/* Animated vertical line */}
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="absolute right-4 top-0 h-full w-[2px] bg-blue-500 z-0 origin-top"
+      ></motion.div>
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         <svg width="100%" height="100%" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
