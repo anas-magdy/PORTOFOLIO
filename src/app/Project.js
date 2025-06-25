@@ -132,7 +132,7 @@ export default function Project() {
                 >
                     <motion.div
                         variants={scaleUp}
-                        className="w-full md:w-1/2 lg:w-1/3 px-6 mt-30 flex justify-center"
+                        className="w-full md:w-1/2 lg:w-1/3  mt-30 flex justify-center"
                     >
                         <Image
                             src="/Frame 34276.jpg"
@@ -237,7 +237,7 @@ export default function Project() {
                 >
                     <motion.div
                         variants={slideInFromRight}
-                        className="w-full md:w-1/2 lg:w-1/3 px-6 mt-30 flex justify-center"
+                        className="w-full md:w-1/2 lg:w-1/3 mt-30 flex justify-center"
                     >
                         <Image
                             src="/proj2_1.png"
