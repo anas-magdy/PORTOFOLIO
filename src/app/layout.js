@@ -17,6 +17,14 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/profile.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#aaaaaa" />
+        <link rel="apple-touch-icon" href="/icon512_maskable.png" />
+
+        <title>Alaa Portofolio</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
