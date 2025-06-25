@@ -1,5 +1,5 @@
 {
-    "theme_color": "#1c1c1c",
+    "theme_color": "#fff",
     "background_color": "#ffffff",
     "icons": [
         {
@@ -20,5 +20,6 @@
     "dir": "auto",
     "lang": "ar",
     "name": "Alaa Portofolio",
-    "short_name": "Alaa Portofolio"
+    "short_name": "Alaa Portofolio",
+    "start_url": "/"
 }
